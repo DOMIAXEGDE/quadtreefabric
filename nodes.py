@@ -1431,27 +1431,12 @@ class QuadtreeApp:
         )
 
         self.explorer_btn = Button(
-            10, 340, SIDEBAR_WIDTH - 20, 30,
+            10,
+            340,
+            SIDEBAR_WIDTH - 20,
+            30,
             "Cell Explorer",
-            self.open_explorer_action
-        )
-
-        self.explorer_btn = Button(
-            10, 340, SIDEBAR_WIDTH - 20, 30,
-            "Cell Explorer",
-            self.open_explorer_action
-        )
-
-        self.explorer_btn = Button(
-            10, 340, SIDEBAR_WIDTH - 20, 30,
-            "Cell Explorer",
-            self.open_explorer_action
-        )
-
-        self.explorer_btn = Button(
-            10, 340, SIDEBAR_WIDTH - 20, 30,
-            "Cell Explorer",
-            self.open_explorer_action
+            self.open_explorer_action,
         )
 
         # All UI elements
@@ -2071,15 +2056,6 @@ class QuadtreeApp:
 
             if self.output_modal.handle_event(event):
                 continue # Event handled, move to next event
-
-            if self.explorer_modal.handle_event(event):
-                continue
-
-            if self.explorer_modal.handle_event(event):
-                continue
-
-            if self.explorer_modal.handle_event(event):
-                continue
 
             if self.explorer_modal.handle_event(event):
                 continue
