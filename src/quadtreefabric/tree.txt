@@ -1,0 +1,14 @@
+quadtreefabric/
+├── src/
+│   └── quadtreefabric/
+│       ├── __init__.py
+│       ├── nodes.py
+│       ├── config.py
+│       ├── runtime/
+│       │   ├── __init__.py
+│       │   └── ... (other runtime files)
+│       └── plugins/
+│           ├── __init__.py
+│           └── ... (your c_exec.py, etc.)
+├── pyproject.toml
+└── ...
