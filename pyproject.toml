@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quadtree-fabric"
+version = "0.3.0"
+description = "Quadtree visual programming environment"
+requires-python = ">=3.12"
+dependencies = [
+  "pygame>=2.1.2",
+  "Pillow>=9.0.0" # Added Pillow as it is a dependency in nodes.py
+]
+
+[project.scripts]
+quadtree-fabric = "quadtreefabric.nodes:main"
+
+[project.entry-points."fabric_nodes.executors"]
+# This section can be used for plugins that are part of the core package
+# or for plugins installed from other packages.
+# For now, we rely on the dynamic discovery from the plugins directory.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"quadtreefabric.plugins" = ["*.py"]
