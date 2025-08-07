@@ -1,2 +1,0 @@
-pip uninstall quadtree-fabric
-pip install -e .
