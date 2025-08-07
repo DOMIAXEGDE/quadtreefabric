@@ -1,4 +1,4 @@
-# quadtreefabric
+# quadtreefabric running on Python 3.13.5
 # Improve nodes.py — Towards a **General‑Purpose Programming Language LAB**
 
 > A clear, execution‑oriented plan to evolve `nodes.py` into an elite, polyglot systems lab: fast, composable, safe, and ergonomically sharp.
